@@ -10,4 +10,7 @@ int main(){
         cout<<*it1<<" ";
     }
     cout<<endl;
+    for (auto i : fl1){ //uses a forward iterator.
+        cout << i <<" ";
+    }
 }
