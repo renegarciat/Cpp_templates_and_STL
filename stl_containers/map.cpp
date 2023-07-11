@@ -51,4 +51,17 @@ int main(){
         message("insert failed");
     }
     rp.second ? message("insert succeded") : message("insert failed");
+    
+    message("find and erase Spike");
+    auto it = mapstr.find("Spike");
+    if(it != mapstr.end()){
+        message("found");
+        printpair(*it);
+        mapstr.erase(it);
+        message("erased");
+    } else{
+        message("not found");
+    }
+    message("size",mapstr.size());
+    print_map(mapstr);
     }
