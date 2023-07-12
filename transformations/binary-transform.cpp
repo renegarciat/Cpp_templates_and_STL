@@ -2,6 +2,7 @@
 #include <functional>
 #include <algorithm>
 #include <vector>
+#include <sstream>
 using namespace std;
 
 template <typename T>
@@ -37,6 +38,5 @@ int main(){
     disp_v(v2);
     disp_v(v3);
     cout<<endl;
-    
-    return 0;
+return 0;
 }
