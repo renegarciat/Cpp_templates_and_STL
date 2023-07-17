@@ -15,12 +15,12 @@ int main(int argc, char const *argv[])
 {
     vector<long> v1 = {26,52,79,114,183};
     vector<long> v2 = {1,2,3,4,5};
-    vector<long> v3 = {v1.size(),0};
+    vector<long> v3(v1.size(),0);
     disp_v(v1);
     disp_v(v2);
     disp_v(v3);
     
-    plus<long> f;
+    plus<long> f; //functor from <functional> header
     transform(v1.begin(),v1.end(),v2.begin(),v3.begin(),f);
     disp_v(v3);
     return 0;
